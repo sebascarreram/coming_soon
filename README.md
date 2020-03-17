@@ -1,8 +1,7 @@
 ## Big desktop
 
-![Image](/assets/img/Screen-1.png)
+<img src="/assets/img/Screen-1.png" alt="photo 1"/>
 
 ## Phone
 
-<img src="/assets/img/Screen-2.png" alt="photo" width="200"/>
-<!-- ![Image](/assets/img/Screen-2.png){ width: 200px; } -->
+<img src="/assets/img/Screen-2.png" alt="photo 2" width="800"/>
