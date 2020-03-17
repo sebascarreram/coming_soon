@@ -1,0 +1,148 @@
+.heading {
+  background-image: url("../assets/img//supri-yanto-U1stMjKjbSA-unsplash.jpg");
+
+  width: 100%;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  //   filter: blur(4px);
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  @include respond(tab-port) {
+    background-position: right;
+  }
+
+  //   @include respond(phone) {
+  //     // background-position: right;
+  //   }
+
+  &__logo {
+    display: flex;
+    align-self: flex-start;
+
+    // flex-direction: column;
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    // align-content: flex-start;
+    top: 0;
+    position: absolute;
+    margin-left: 3rem;
+    margin-top: 1rem;
+
+    @include respond(phone) {
+      align-self: center;
+      margin-left: 0;
+      //   margin-top: 2rem;
+    }
+
+    &-text {
+      //   color: $color-grey-light-1;
+      color: $color-grey-light-1;
+      font-size: 2rem;
+      font-family: "Josefin Slab", serif;
+      font-weight: 700;
+    }
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    color: $color-grey-light-1;
+    align-items: center;
+    &-arrow {
+      margin: auto;
+      width: 60%;
+      color: #999;
+    }
+    &-main {
+      font-size: 7rem;
+      font-family: inherit;
+      font-weight: 400;
+      letter-spacing: 0.8rem;
+      margin: 0;
+      @include respond(phone) {
+        font-size: 3.5rem;
+      }
+    }
+    &-sub {
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+  }
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-self: flex-start;
+    position: absolute;
+    bottom: 0;
+
+    margin-left: 3rem;
+    margin-bottom: 1.5rem;
+    width: 65%;
+
+    @include respond(phone) {
+      align-self: center;
+      margin-left: 0;
+      width: 100%;
+    }
+
+    &-text {
+      font-size: 1.4rem;
+      color: $color-grey-light-1;
+      text-decoration: none;
+      margin: 0;
+
+      @include respond(phone) {
+        align-self: center;
+      }
+    }
+    &-link {
+      //   text-decoration: none;
+      color: $color-grey-light-1;
+
+      &:hover {
+        color: $color-tertiary-light;
+      }
+    }
+
+    &-list {
+      list-style-type: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 1rem;
+      @include respond(phone) {
+        justify-content: center;
+      }
+    }
+    &-item {
+      width: 3.5rem;
+      height: 3.5rem;
+      &:not(:last-of-type) {
+        margin-right: 1.7rem;
+      }
+    }
+    // &-link {
+    //   width: 3.5rem;
+    //   height: 3.5rem;
+    //   display: inline-block;
+    // }
+    &-icon {
+      width: 3.5rem;
+      height: 3.5rem;
+      transition: all 0.2s;
+
+      @include respond(phone) {
+        fill: $color-tertiary-light;
+      }
+
+      &:hover {
+        fill: $color-tertiary-light;
+      }
+    }
+  }
+}

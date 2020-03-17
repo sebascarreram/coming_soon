@@ -1,0 +1,151 @@
+/*
+0 - 600px: phone
+600 - 900px: Tablet portait
+900 - 1200px: Tablet landscape
+[1200 - 1800px] is where our normal style apply
+1800px +: Big desktop
+
+
+$breakpoint arguement choices:
+
+- phone
+- tab-port
+- tab-land
+- bid-desktop
+
+1em = 16px;
+
+
+ORDER: Base + typography > general layout + grid  > page layout > component
+
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab:400,700&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  color: #f7f7f7;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 0;
+  margin: 0; }
+
+::selection {
+  background-color: #3498db;
+  color: #000; }
+
+.heading {
+  background-image: url("../assets/img//supri-yanto-U1stMjKjbSA-unsplash.jpg");
+  width: 100%;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .heading {
+      background-position: right; } }
+  .heading__logo {
+    display: flex;
+    align-self: flex-start;
+    top: 0;
+    position: absolute;
+    margin-left: 3rem;
+    margin-top: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .heading__logo {
+        align-self: center;
+        margin-left: 0; } }
+    .heading__logo-text {
+      color: #f7f7f7;
+      font-size: 2rem;
+      font-family: "Josefin Slab", serif;
+      font-weight: 700; }
+  .heading__text {
+    display: flex;
+    flex-direction: column;
+    color: #f7f7f7;
+    align-items: center; }
+    .heading__text-arrow {
+      margin: auto;
+      width: 60%;
+      color: #999; }
+    .heading__text-main {
+      font-size: 7rem;
+      font-family: inherit;
+      font-weight: 400;
+      letter-spacing: 0.8rem;
+      margin: 0; }
+      @media only screen and (max-width: 37.5em) {
+        .heading__text-main {
+          font-size: 3.5rem; } }
+    .heading__text-sub {
+      font-size: 1.4rem;
+      font-weight: 300; }
+  .heading__footer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-self: flex-start;
+    position: absolute;
+    bottom: 0;
+    margin-left: 3rem;
+    margin-bottom: 1.5rem;
+    width: 65%; }
+    @media only screen and (max-width: 37.5em) {
+      .heading__footer {
+        align-self: center;
+        margin-left: 0;
+        width: 100%; } }
+    .heading__footer-text {
+      font-size: 1.4rem;
+      color: #f7f7f7;
+      text-decoration: none;
+      margin: 0; }
+      @media only screen and (max-width: 37.5em) {
+        .heading__footer-text {
+          align-self: center; } }
+    .heading__footer-link {
+      color: #f7f7f7; }
+      .heading__footer-link:hover {
+        color: #3498db; }
+    .heading__footer-list {
+      list-style-type: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 1rem; }
+      @media only screen and (max-width: 37.5em) {
+        .heading__footer-list {
+          justify-content: center; } }
+    .heading__footer-item {
+      width: 3.5rem;
+      height: 3.5rem; }
+      .heading__footer-item:not(:last-of-type) {
+        margin-right: 1.7rem; }
+    .heading__footer-icon {
+      width: 3.5rem;
+      height: 3.5rem;
+      transition: all 0.2s; }
+      @media only screen and (max-width: 37.5em) {
+        .heading__footer-icon {
+          fill: #3498db; } }
+      .heading__footer-icon:hover {
+        fill: #3498db; }
