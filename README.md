@@ -8,4 +8,4 @@ Coming soon basic with Responsive design
 
 ## Phone
 
-![Image](/assets/img/Screen-2.png)
+![Image](/assets/img/Screen-2.png){:height="50%" width="50%"}
