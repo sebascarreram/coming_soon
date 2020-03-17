@@ -4,4 +4,4 @@
 
 ## Phone
 
-<img src="/assets/img/Screen-2.png" alt="photo 2" width="800"/>
+<img src="/assets/img/Screen-2.png" alt="photo 2" width="700"/>
